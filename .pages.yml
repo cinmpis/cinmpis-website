@@ -1,0 +1,188 @@
+media:
+  - name: images
+    label: Immagini
+    input: public/uploads/images
+    output: /uploads/images
+  - name: documents
+    label: Documenti
+    input: public/uploads/documents
+    output: /uploads/documents
+
+components:
+  person:
+    type: object
+    fields:
+      - { name: name, label: Nome, type: string }
+      - { name: role, label: Ruolo, type: string }
+      - { name: affiliation, label: Affiliazione, type: string }
+      - { name: email, label: Email, type: string, required: false }
+
+content:
+  - name: site
+    label: Impostazioni sito
+    type: file
+    path: src/data/site.json
+    fields:
+      - { name: name, label: Nome breve, type: string }
+      - { name: fullName, label: Nome completo, type: text }
+      - { name: url, label: URL, type: string }
+      - { name: founded, label: Anno di fondazione, type: number }
+      - { name: legalAddress, label: Sede legale, type: text }
+      - { name: administrativeAddress, label: Sede amministrativa, type: text }
+      - { name: email, label: Email, type: string }
+      - { name: pec, label: PEC, type: string }
+      - { name: phone, label: Telefono, type: string }
+      - { name: cf, label: Codice fiscale, type: string }
+      - { name: piva, label: Partita IVA, type: string }
+      - { name: anr, label: Anagrafe Nazionale Ricerche, type: string }
+
+  - name: news
+    label: Notizie / In evidenza
+    type: file
+    path: src/data/news.json
+    format: json
+    list: true
+    fields:
+      - { name: date, label: Data, type: date }
+      - { name: category, label: Categoria, type: string }
+      - { name: title, label: Titolo, type: string }
+      - { name: summary, label: Sommario, type: text }
+      - { name: href, label: Link, type: string }
+
+  - name: organi
+    label: Organi
+    type: file
+    path: src/data/organi.json
+    fields:
+      - name: direzione
+        label: Direzione
+        component: person
+        list: true
+      - name: giunta
+        label: Giunta
+        component: person
+        list: true
+      - name: consiglioScientifico
+        label: Consiglio Scientifico
+        component: person
+        list: true
+
+  - name: universities
+    label: Università e afferenti
+    type: file
+    path: src/data/universities.json
+    format: json
+    list: true
+    fields:
+      - { name: name, label: Università, type: string }
+      - { name: delegate, label: Delegato di sede, type: string }
+      - { name: logo, label: Logo, type: image }
+      - name: departments
+        label: Dipartimenti
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - { name: name, label: Dipartimento, type: string }
+          - { name: members, label: Afferenti, type: string, list: true }
+
+  - name: events
+    label: CINMPIS Days
+    type: file
+    path: src/data/events.json
+    format: json
+    list: true
+    fields:
+      - { name: edition, label: Edizione, type: string }
+      - { name: city, label: Città, type: string }
+      - { name: venue, label: Sede, type: text }
+      - { name: start, label: Data inizio, type: date }
+      - { name: end, label: Data fine, type: date }
+      - { name: website, label: Sito web, type: string, required: false }
+      - name: status
+        label: Stato
+        type: select
+        required: false
+        options:
+          values: [upcoming, past]
+      - name: lecturer
+        label: CINMPIS Lecturer
+        type: object
+        required: false
+        fields:
+          - { name: name, label: Nome, type: string }
+          - { name: headline, label: Titolo relazione, type: text, required: false }
+          - { name: affiliation, label: Affiliazione, type: string, required: false }
+          - { name: website, label: Sito, type: string, required: false }
+          - { name: email, label: Email, type: string, required: false }
+          - { name: photo, label: Foto, type: image, required: false }
+
+  - name: awards
+    label: Premi
+    type: file
+    path: src/data/awards.json
+    fields:
+      - name: innovation
+        label: Innovazione nella Sintesi Organica
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{year} · {fullname}"
+        fields: &award_fields
+          - { name: fullname, label: Nome, type: string }
+          - { name: year, label: Anno, type: number }
+          - { name: venue, label: Affiliazione, type: string }
+      - name: phd
+        label: Migliore Tesi di Dottorato
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{year} · {fullname}"
+        fields: *award_fields
+
+  - name: bandi
+    label: Bandi
+    type: file
+    path: src/data/bandi.json
+    format: json
+    list: true
+    fields:
+      - { name: title, label: Titolo, type: string }
+      - { name: date, label: Data pubblicazione, type: string }
+      - { name: description, label: Descrizione, type: text }
+      - { name: venue, label: Sede, type: string, required: false }
+      - { name: duration, label: Durata, type: string, required: false }
+      - { name: deadline, label: Scadenza, type: text }
+      - { name: attachment, label: Allegato, type: file }
+
+  - name: publications
+    label: Pubblicazioni
+    type: file
+    path: src/data/publications.json
+    format: json
+    list: true
+    fields:
+      - { name: title, label: Titolo, type: text }
+      - { name: authors, label: Autori, type: text }
+      - { name: journal, label: Rivista, type: string }
+      - { name: year, label: Anno, type: number }
+      - { name: doi, label: DOI, type: string, required: false }
+
+actions:
+  - name: build-site
+    label: Verifica build del sito
+    workflow: build.yml
+    ref: current
+  - name: import-doi
+    label: Importa pubblicazione da DOI
+    workflow: import-doi.yml
+    ref: current
+    fields:
+      - name: doi
+        label: DOI
+        type: text
+        required: true
