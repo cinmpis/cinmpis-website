@@ -1,0 +1,31 @@
+name: Import publication from DOI
+on:
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: Pages CMS payload as JSON
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: parse
+        shell: bash
+        run: |
+          DOI=$(echo '${{ inputs.payload }}' | jq -r '.inputs.doi')
+          echo "doi=$DOI" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/import-doi.mjs '${{ steps.parse.outputs.doi }}'
+      - name: Commit bibliography update
+        run: |
+          git config user.name "cinmpis-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/data/publications.json
+          git diff --cached --quiet || git commit -m "Import publication DOI ${{ steps.parse.outputs.doi }}"
+          git push

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+:root {
+    --main-color: #19CBE4;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px) {
+    video {
+        width: 100%;
+    }
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+.position-fixed {
+    position: fixed;
+}

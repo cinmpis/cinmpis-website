@@ -1,0 +1,75 @@
+.nav-item a {
+    -webkit-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+    transition: .7s ease-in;
+
+    color: white;
+    font-weight: 590;
+}
+
+.nav-item a:hover {
+    -webkit-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+    transition: .7s ease-in;
+
+    color: var(--main-color);
+}
+
+.nav-item.active a {
+    color: var(--main-color);
+}
+
+
+/* Dropdown menu */
+
+@media (min-width: 768px) {
+
+    .dropdown-menu {
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav-item a:hover ~ .dropdown-menu {
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .dropdown-menu:hover {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+.dropdown-menu {
+    background-color: #363636;
+    z-index: 9;
+}
+
+.dropdown-item:hover, .dropdown-item.active {
+    background-color: rgba(220, 220, 220, 0.1);
+    color: white;
+}
+
+/* Nav in secondary endpoints */
+
+.my-navbar {
+    background-color: var(--main-color);
+}
+
+.my-navbar-brand {
+    float: left;
+    display: initial;
+}

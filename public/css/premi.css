@@ -1,0 +1,140 @@
+@import "rules.css";
+@import "navbar.css";
+
+.bg-video {
+    position: relative;
+    min-height: 40rem;
+}
+
+.header-title {
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+        -ms-transform: translateY(1rem);
+            transform: translateY(1rem);
+    -webkit-animation: 0.3s ease-in 0s 1 normal forwards running fade-in-header;
+            animation: 0.3s ease-in 0s 1 normal forwards running fade-in-header
+}
+
+.header-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+        -ms-transform: translateY(1rem);
+            transform: translateY(1rem);
+    -webkit-animation: 0.3s ease-in 0s 1 normal forwards running fade-in-header;
+            animation: 0.3s ease-in 0s 1 normal forwards running fade-in-header
+}
+
+@-webkit-keyframes fade-in-header {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(1rem);
+                transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-header {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(1rem);
+                transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+#app .container {
+    padding-top: 6rem;
+}
+
+.actual-body-scroller {
+    position: absolute;
+    margin-top: 24rem;
+}
+
+.actual-body-wrapper {
+    -webkit-filter: drop-shadow(-4px -4px 3px rgba(20, 20, 0, 0.5));
+            filter: drop-shadow(-4px -4px 3px rgba(20, 20, 0, 0.5));
+}
+
+.actual-body {
+    background-color: white;
+    -webkit-clip-path: polygon(0 8rem, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 8rem, 100% 0, 100% 100%, 0% 100%);
+    min-height: 64rem;
+    padding-top: 6rem;
+}
+
+.item-body {
+    color: #242424;
+    font-size: 1.2rem;
+}
+
+.item-body b {
+    color: black;
+    font-size: 1.25rem;
+}
+
+.item-title {
+    font-size: 2.6rem;
+}
+
+.section-header {
+    font-weight: 900;
+}
+
+.sciday.item-title {
+    font-weight: 700;
+}
+
+.lecturer .separator, .sciday .separator {
+    background-color: #eaeaea;
+    height: 0.1rem;
+    border-radius: 0.6rem;
+}
+
+@media (min-width: 768px) {
+    .header-title {
+        font-size: 6.5em;
+        font-weight: 900;
+    }
+
+    .actual-body {
+        background-color: white;
+        -webkit-clip-path: polygon(0 16rem, 100% 0, 100% 100%, 0% 100%);
+                clip-path: polygon(0 16rem, 100% 0, 100% 100%, 0% 100%);
+        min-height: 64rem;
+    }
+
+    #app .container {
+        padding-top: 18rem;
+    }
+
+    .actual-body-scroller {
+        position: absolute;
+        margin-top: 32rem;
+    }
+
+    .actual-body-wrapper {
+        background-color: transparent;
+        -webkit-filter: drop-shadow(-4px -4px 3px rgba(20, 20, 0, 0.5));
+                filter: drop-shadow(-4px -4px 3px rgba(20, 20, 0, 0.5));
+    }
+
+    .bg-video {
+        min-height: 0;
+    }
+}

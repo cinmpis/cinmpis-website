@@ -1,0 +1,121 @@
+@import "rules.css";
+@import "navbar.css";
+
+
+.bg-video {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: -1;
+}
+
+.bg-video-container {
+    padding: 0;
+    position: relative;
+}
+
+
+.header-title {
+    /* font-size: 2.5em;
+    font-weight: 700; */
+    color: white;
+}
+
+.header-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: white;
+}
+
+.statuto, .bandi, .bandi path, .statuto path, .bilancio, .bilancio path, .determine, .determine path {
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.statuto:hover, .bandi:hover, .bilancio:hover, .determine:hover {
+    background-color: #191d3e;
+    color: white;
+}
+
+.statuto:hover path,.bandi:hover path, .bilancio:hover path, .determine:hover path {
+    fill: white;
+}
+
+.amm-card .icon {
+    width: 8rem;
+}
+
+.separator {
+    background-color: #dfdfdf;
+    height: 0.1rem;
+    border-radius: 0.6rem;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    border: 0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+}
+
+.amm-card {
+    margin-top: 2rem;
+    border-radius: 1.2rem;
+    background-color: white;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+
+
+@media (min-width: 768.1px) and (max-width: 1080px) {
+    .amm-card  {
+        width: 12rem;
+        height: 15rem;
+    }
+
+    .amm-card svg {
+        width: 10rem;
+        height: 10rem;
+
+    }
+
+    .amm-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .tested {
+        margin: 5rem;
+        margin-top: -1rem;
+        padding: 5rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2.5em;
+        font-weight: 900;
+    }
+
+    .amm-card {
+        border-radius: 1.2rem;
+        background-color: white;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+
+    .bg-video {
+        height: 100%;
+    }
+}
