@@ -1,8 +1,62 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import organi from '../data/organi.json';
-const initials=n=>n.split(' ').map(x=>x[0]).slice(0,2).join('');
-const group=(title,subtitle,people)=>({title,subtitle,people});
-const groups=[group('Direzione','Direzione del Consorzio',organi.direzione),group('Giunta','Componenti della Giunta',organi.giunta),group('Consiglio Scientifico','Componenti del Consiglio Scientifico',organi.consiglioScientifico)];
+import { withBase } from '../utils/url.js';
+
+const initials = (name) => name.split(' ').filter(Boolean).map((part) => part[0]).slice(0, 2).join('');
+const group = (title, subtitle, people) => ({ title, subtitle, people });
+const groups = [
+  group('Direzione', 'Direzione del Consorzio', organi.direzione),
+  group('Giunta', 'Componenti della Giunta', organi.giunta),
+  group('Consiglio Scientifico', 'Componenti del Consiglio Scientifico', organi.consiglioScientifico),
+];
 ---
-<BaseLayout title="Organi"><section class="page-hero"><div class="container-wide"><span class="eyebrow">Governance</span><h1>Organi del Consorzio.</h1><p>Composizione aggiornata sulla base del rinnovo comunicato nel 2026.</p></div></section>{groups.map((g,i)=><section class={`section ${i%2?'alt':''}`}><div class="container-wide"><div class="section-head"><div><span class="eyebrow">{String(i+1).padStart(2,'0')}</span><h2>{g.title}</h2></div><p>{g.subtitle}</p></div><div class="person-grid">{g.people.map(p=><article class="person"><div class="avatar">{initials(p.name)}</div><h3>{p.name}</h3><div class="role">{p.role}</div><div class="aff">{p.affiliation}</div>{p.email && <a class="link-arrow" href={`mailto:${p.email}`}>E-mail</a>}</article>)}</div></div></section>)}</BaseLayout>
+<BaseLayout title="Organi">
+  <section class="page-hero">
+    <div class="container-wide">
+      <span class="eyebrow">Governance</span>
+      <h1>Organi del Consorzio.</h1>
+      <p>Composizione aggiornata sulla base del rinnovo comunicato nel 2026.</p>
+    </div>
+  </section>
+
+  {groups.map((g, i) => (
+    <section class={`section ${i % 2 ? 'alt' : ''}`}>
+      <div class="container-wide">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">{String(i + 1).padStart(2, '0')}</span>
+            <h2>{g.title}</h2>
+          </div>
+          <p>{g.subtitle}</p>
+        </div>
+
+        <div class="person-grid">
+          {g.people.map((p) => (
+            <article class={`person ${p.photo ? 'has-photo' : ''}`}>
+              <div class="person-photo-wrap">
+                {p.photo ? (
+                  <img
+                    class="person-photo"
+                    src={withBase(p.photo)}
+                    alt={`Ritratto di ${p.name}`}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <div class="avatar" aria-hidden="true">{initials(p.name)}</div>
+                )}
+              </div>
+              <div class="person-body">
+                <h3>{p.name}</h3>
+                <div class="role">{p.role}</div>
+                <div class="aff">{p.affiliation}</div>
+                {p.email && <a class="link-arrow" href={`mailto:${p.email}`}>E-mail</a>}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+</BaseLayout>

@@ -15,6 +15,7 @@ components:
       - { name: name, label: Nome, type: string }
       - { name: role, label: Ruolo, type: string }
       - { name: affiliation, label: Affiliazione, type: string }
+      - { name: photo, label: Foto, type: image, required: false }
       - { name: email, label: Email, type: string, required: false }
 
 content:
