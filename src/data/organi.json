@@ -4,12 +4,14 @@
       "name": "Vito Capriati",
       "role": "Direttore",
       "affiliation": "Università di Bari Aldo Moro",
+      "photo": "/uploads/images/Vito_Capriati1.jpg",
       "email": "vito.capriati@uniba.it"
     },
     {
       "name": "Alessandra Tolomelli",
       "role": "Vice-Direttrice",
       "affiliation": "Università di Bologna – Alma Mater Studiorum",
+      "photo": "/uploads/images/Alessandra_Tolomelli.jpg",
       "email": "alessandra.tolomelli@unibo.it"
     }
   ],
@@ -32,7 +34,8 @@
     {
       "name": "Alessandra Tolomelli",
       "role": "Componente della Giunta",
-      "affiliation": "Università di Bologna-Alma Mater Studiorum"
+      "affiliation": "Università di Bologna-Alma Mater Studiorum",
+      "photo": "/uploads/images/Alessandra_Tolomelli-1.jpg"
     }
   ],
   "consiglioScientifico": [
@@ -49,7 +52,8 @@
     {
       "name": "Filippo Doria",
       "role": "Componente del Consiglio Scientifico",
-      "affiliation": "Università di Pavia"
+      "affiliation": "Università di Pavia",
+      "photo": "/uploads/images/Filippo_Doria.png"
     },
     {
       "name": "Bartolo Gabriele",
@@ -74,7 +78,9 @@
     {
       "name": "Antonio Rescifina",
       "role": "Componente del Consiglio Scientifico",
-      "affiliation": "Università di Catania"
+      "affiliation": "Università di Catania",
+      "photo": "/uploads/images/Foto_tessera_AR_2.jpg",
+      "email": "antonio.rescifina@unict.it"
     },
     {
       "name": "Francesco Secci",
@@ -84,7 +90,8 @@
     {
       "name": "Stefano Superchi",
       "role": "Componente del Consiglio Scientifico",
-      "affiliation": "Università della Basilicata"
+      "affiliation": "Università della Basilicata",
+      "photo": "/uploads/images/Stefano_Superchi.jpeg"
     }
   ]
 }
