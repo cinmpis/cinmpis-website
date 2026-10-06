@@ -1,4 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../utils/url.js';
 ---
-<BaseLayout title="Pagina non trovata"><section class="page-hero"><div class="container-wide"><span class="eyebrow">404</span><h1>Pagina non trovata.</h1><p>Il contenuto richiesto potrebbe essere stato spostato durante la ristrutturazione del sito.</p><a class="btn btn-primary" href="/">Torna alla home</a></div></section></BaseLayout>
+<BaseLayout title="Pagina non trovata"><section class="page-hero"><div class="container-wide"><span class="eyebrow">404</span><h1>Pagina non trovata.</h1><p>Il contenuto richiesto potrebbe essere stato spostato durante la ristrutturazione del sito.</p><a class="btn btn-primary" href={withBase('/')}>Torna alla home</a></div></section></BaseLayout>

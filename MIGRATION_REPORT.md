@@ -33,3 +33,7 @@ Il Direttore è stato mantenuto come Vito Capriati perché non è stata comunica
 ## Nota grafica
 
 Il marchio molecolare SVG inserito nella prima versione è un elemento grafico provvisorio creato per il nuovo layout. Può essere sostituito in qualunque momento con il logo ufficiale senza modificare la struttura del sito.
+
+## Sistema Preview
+
+È stato aggiunto un workflow di preview separato (`.github/workflows/preview.yml`) richiamabile direttamente da Pages CMS tramite il pulsante **Anteprima sito**. La build di preview usa automaticamente il sottopercorso GitHub Pages, mostra un banner di anteprima e blocca l'indicizzazione dei motori di ricerca. La preview non modifica il dominio di produzione.

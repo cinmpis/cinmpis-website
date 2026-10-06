@@ -173,6 +173,15 @@ content:
       - { name: doi, label: DOI, type: string, required: false }
 
 actions:
+  - name: preview-site
+    label: Anteprima sito
+    workflow: preview.yml
+    ref: current
+    cancelable: true
+    confirm:
+      title: Generare una nuova anteprima?
+      message: La versione di prova verrà ricostruita e pubblicata su GitHub Pages senza modificare www.cinmpis.it.
+      button: Genera anteprima
   - name: build-site
     label: Verifica build del sito
     workflow: build.yml

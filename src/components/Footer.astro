@@ -1,15 +1,16 @@
 ---
 import site from '../data/site.json';
+import { withBase } from '../utils/url.js';
 ---
 <footer class="site-footer">
   <div class="container-wide footer-grid">
     <div>
-      <div class="footer-brand"><img src="/assets/cinmpis-mark.svg" alt="" width="52" height="52"/><strong>CINMPIS</strong></div>
+      <div class="footer-brand"><img src={withBase('/assets/cinmpis-mark.svg')} alt="" width="52" height="52"/><strong>CINMPIS</strong></div>
       <p>{site.fullName}</p>
       <p class="muted">Costituito nel 1994 · sotto la vigilanza del Ministero dell’Università e della Ricerca.</p>
     </div>
-    <div><h3>Esplora</h3><a href="/consorzio/">Il Consorzio</a><a href="/rete/">Università consorziate</a><a href="/organi/">Organi</a><a href="/cinmpis-days/">CINMPIS Days</a></div>
-    <div><h3>Risorse</h3><a href="/bandi/">Bandi</a><a href="/pubblicazioni/">Pubblicazioni</a><a href="/amministrazione-trasparente/">Amministrazione Trasparente</a><a href="/contatti/">Contatti</a></div>
+    <div><h3>Esplora</h3><a href={withBase('/consorzio/')}>Il Consorzio</a><a href={withBase('/rete/')}>Università consorziate</a><a href={withBase('/organi/')}>Organi</a><a href={withBase('/cinmpis-days/')}>CINMPIS Days</a></div>
+    <div><h3>Risorse</h3><a href={withBase('/bandi/')}>Bandi</a><a href={withBase('/pubblicazioni/')}>Pubblicazioni</a><a href={withBase('/amministrazione-trasparente/')}>Amministrazione Trasparente</a><a href={withBase('/contatti/')}>Contatti</a></div>
     <div><h3>Contatti</h3><a href={`mailto:${site.email}`}>{site.email}</a><a href={`mailto:${site.pec}`}>{site.pec}</a><span>{site.phone}</span></div>
   </div>
   <div class="container-wide footer-bottom"><span>© {new Date().getFullYear()} CINMPIS</span><span>CF {site.cf} · P. IVA {site.piva}</span><span>Privacy · Accessibilità</span></div>
