@@ -42,6 +42,21 @@
       "affiliation": "Università di Perugia"
     },
     {
+      "name": "Francesco De Riccardis",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Salerno"
+    },
+    {
+      "name": "Filippo Doria",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Pavia"
+    },
+    {
+      "name": "Bartolo Gabriele",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università della Calabria"
+    },
+    {
       "name": "Barbara La Ferla",
       "role": "Componente del Consiglio Scientifico",
       "affiliation": "Università di Milano-Bicocca"
@@ -62,29 +77,14 @@
       "affiliation": "Università di Catania"
     },
     {
-      "name": "Bartolo Gabriele",
+      "name": "Francesco Secci",
       "role": "Componente del Consiglio Scientifico",
-      "affiliation": "Università della Calabria"
-    },
-    {
-      "name": "Filippo Doria",
-      "role": "Componente del Consiglio Scientifico",
-      "affiliation": "Università di Pavia"
+      "affiliation": "Università di Cagliari"
     },
     {
       "name": "Stefano Superchi",
       "role": "Componente del Consiglio Scientifico",
       "affiliation": "Università della Basilicata"
-    },
-    {
-      "name": "Francesco De Riccardis",
-      "role": "Componente del Consiglio Scientifico",
-      "affiliation": "Università di Salerno"
-    },
-    {
-      "name": "Francesco Secci",
-      "role": "Componente del Consiglio Scientifico",
-      "affiliation": "Università di Cagliari"
     }
   ]
 }
