@@ -1,0 +1,26 @@
+---
+const path = Astro.url.pathname;
+const nav = [
+  ['Il Consorzio','/consorzio/'],['Rete scientifica','/rete/'],['Organi','/organi/'],['CINMPIS Days','/cinmpis-days/'],['Premi','/premi/'],['Bandi','/bandi/'],['Pubblicazioni','/pubblicazioni/'],['Trasparenza','/amministrazione-trasparente/']
+];
+---
+<header class="site-header" data-header>
+  <div class="nav-wrap container-wide">
+    <a class="brand" href="/" aria-label="CINMPIS home">
+      <img src="/assets/cinmpis-mark.svg" width="48" height="48" alt="" />
+      <span><strong>CINMPIS</strong><small>Rete interuniversitaria di ricerca</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" data-menu-toggle>
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" aria-label="Navigazione principale" data-main-nav>
+      {nav.map(([label,href]) => <a href={href} class={path.startsWith(href) ? 'active' : ''}>{label}</a>)}
+      <a href="/contatti/" class="nav-cta">Contatti</a>
+    </nav>
+  </div>
+</header>
+<script is:inline>
+  const btn=document.querySelector('[data-menu-toggle]'); const nav=document.querySelector('[data-main-nav]');
+  btn?.addEventListener('click',()=>{const open=btn.getAttribute('aria-expanded')==='true'; btn.setAttribute('aria-expanded',String(!open)); nav?.classList.toggle('open',!open);});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){btn?.setAttribute('aria-expanded','false');nav?.classList.remove('open')}});
+</script>

@@ -1,0 +1,90 @@
+{
+  "direzione": [
+    {
+      "name": "Vito Capriati",
+      "role": "Direttore",
+      "affiliation": "Università di Bari Aldo Moro",
+      "email": "vito.capriati@uniba.it"
+    },
+    {
+      "name": "Alessandra Tolomelli",
+      "role": "Vice-Direttrice",
+      "affiliation": "Università di Bologna – Alma Mater Studiorum",
+      "email": "alessandra.tolomelli@unibo.it"
+    }
+  ],
+  "giunta": [
+    {
+      "name": "Armando Carlone",
+      "role": "Componente della Giunta",
+      "affiliation": "Università dell'Aquila"
+    },
+    {
+      "name": "Alessandro Palmieri",
+      "role": "Componente della Giunta",
+      "affiliation": "Università di Camerino"
+    },
+    {
+      "name": "Alessandra Tolomelli",
+      "role": "Componente della Giunta",
+      "affiliation": "Università di Bologna-Alma Mater Studiorum"
+    },
+    {
+      "name": "Giorgia Oliviero",
+      "role": "Componente della Giunta",
+      "affiliation": "Università di Napoli"
+    }
+  ],
+  "consiglioScientifico": [
+    {
+      "name": "Luana Bagnoli",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Perugia"
+    },
+    {
+      "name": "Barbara La Ferla",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Milano-Bicocca"
+    },
+    {
+      "name": "Marco Lessi",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Pisa"
+    },
+    {
+      "name": "Melchiorre Parisi",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Messina"
+    },
+    {
+      "name": "Antonio Rescifina",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Catania"
+    },
+    {
+      "name": "Bartolo Gabriele",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università della Calabria"
+    },
+    {
+      "name": "Filippo Doria",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Pavia"
+    },
+    {
+      "name": "Stefano Superchi",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università della Basilicata"
+    },
+    {
+      "name": "Francesco De Riccardis",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Salerno"
+    },
+    {
+      "name": "Francesco Secci",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Cagliari"
+    }
+  ]
+}

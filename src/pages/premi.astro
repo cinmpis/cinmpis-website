@@ -1,0 +1,5 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import awards from '../data/awards.json';
+---
+<BaseLayout title="Premi"><section class="page-hero"><div class="container-wide"><span class="eyebrow">Premi CINMPIS</span><h1>Riconoscere innovazione e giovani talenti.</h1><p>L’archivio storico dei Premi CINMPIS dedicati all’innovazione nella sintesi organica e alle migliori tesi di dottorato.</p></div></section><section class="section"><div class="container-wide award-grid">{[['Innovazione nella Sintesi Organica',awards.innovation],['Migliore Tesi di Dottorato',awards.phd]].map(([name,items])=><section class="card"><span class="meta">Archivio</span><h2>{name}</h2><div class="award-list">{items.map(a=><div class="award-item"><strong>{a.year}</strong><div>{a.fullname}<br/><small style="color:var(--muted)">{a.venue}</small></div></div>)}</div></section>)}</div></section></BaseLayout>

@@ -1,0 +1,388 @@
+[
+  {
+    "name": "Università di Bari-Aldo Moro",
+    "delegate": "Vito Capriati",
+    "departments": [
+      {
+        "name": "Dipartimento di Farmacia – Scienze del Farmaco",
+        "members": [
+          "Vito Capriati",
+          "Luciana Cicco",
+          "Marco Colella",
+          "Leonardo Degennaro",
+          "Renzo Luisi",
+          "Filippo Maria Perna",
+          "Paola Vitale"
+        ]
+      },
+      {
+        "name": "Dipartimento di Chimica",
+        "members": [
+          "Pietro Cotugno",
+          "Lucia D’Accolti",
+          "Gianluca Maria Farinola",
+          "Antonio Monopoli",
+          "Angelo Nacci",
+          "Angela Punzi",
+          "Roberta Ragni"
+        ]
+      }
+    ],
+    "logo": "/img/uni/uniba.png"
+  },
+  {
+    "name": "Università della Basilicata",
+    "delegate": "Stefano Superchi",
+    "departments": [
+      {
+        "name": "Dipartimento di Scienze",
+        "members": [
+          "Lucia Chiummiento",
+          "Maria Funicello",
+          "Patrizia Scafato",
+          "Stefano Superchi"
+        ]
+      }
+    ],
+    "logo": "/img/uni/unibas.png"
+  },
+  {
+    "name": "Università di Bologna-Alma Mater Studiorum",
+    "delegate": "Alessandra Tolomelli",
+    "departments": [
+      {
+        "name": "Dipartimento di Chimica “G. Ciamician”",
+        "members": [
+          "Marco Bandini",
+          "Pier Giorgio Cozzi",
+          "Luca Gentilucci",
+          "Daria Giacomini",
+          "Andrea Gualandi",
+          "Marco Lombardo",
+          "Arianna Quintavalla",
+          "Alessandra Tolomelli",
+          "Claudia Tomasini",
+          "Claudio Trombini"
+        ]
+      },
+      {
+        "name": "Dipartimento di Chimica Industriale “T. Montanari”",
+        "members": [
+          "Giorgio Bencivenni",
+          "Luca Bernardi",
+          "Andrea Mazzanti",
+          "Paolo Righi"
+        ]
+      }
+    ],
+    "logo": "/img/uni/unibo.png"
+  },
+  {
+    "name": "Università di Cagliari",
+    "delegate": "Angelo Frongia",
+    "departments": [
+      {
+        "name": "Dipartimento di Scienze Chimiche e Geologiche",
+        "members": [
+          "Claudia Fattuoni",
+          "Angelo Frongia",
+          "Andrea Porcheddu",
+          "Francesco Secci",
+          "Giuseppe Sforazzini"
+        ]
+      },
+      {
+        "name": "Dipartimento di Scienze della Vita e dell’Ambiente",
+        "members": [
+          "Valentina Onnis",
+          "Graziella Tocco"
+        ]
+      }
+    ],
+    "logo": "/img/uni/unica.png"
+  },
+  {
+    "name": "Università della Calabria",
+    "delegate": "Bartolo Gabriele",
+    "departments": [
+      {
+        "name": "Dipartimento di Chimica e Tecnologie Chimiche",
+        "members": [
+          "Paola Costanzo",
+          "Antonio De Nino",
+          "Bartolo Gabriele",
+          "Loredana Maiuolo",
+          "Raffaella Mancuso",
+          "Lucia Veltri",
+          "Ida Ziccarelli"
+        ]
+      },
+      {
+        "name": "Dipartimento di Farmacia e Scienze della Salute e della Nutrizione",
+        "members": [
+          "Maria Luisa Di Gioia",
+          "Antonella Leggio",
+          "Carlo Siciliano"
+        ]
+      }
+    ],
+    "logo": "/img/uni/unical.png"
+  },
+  {
+    "name": "Università di Camerino",
+    "delegate": "Alessandro Palmieri",
+    "departments": [
+      {
+        "name": "Scuola di Scienze e Tecnologie",
+        "members": [
+          "Luciano Barboni",
+          "Cristina Cimarelli",
+          "Serena Gabrielli",
+          "Gabriele Lupidi",
+          "Enrico Marcantoni",
+          "Alessandro Palmieri",
+          "Matteo Tiecco",
+          "Elisabetta Torregiani"
+        ]
+      }
+    ],
+    "logo": "/img/uni/unicam.png"
+  },
+  {
+    "name": "Università di Catania",
+    "delegate": "Antonio Rescifina",
+    "departments": [
+      {
+        "name": "Dipartimento di Scienze del Farmaco e della Salute",
+        "members": [
+          "Giuseppe Floresta",
+          "Vincenzo Patamia",
+          "Venerando Pistarà",
+          "Antonio Rescifina",
+          "Chiara Zagni"
+        ]
+      }
+    ],
+    "logo": "/img/uni/unict.png"
+  },
+  {
+    "name": "Università dell'Aquila",
+    "delegate": "Armando Carlone",
+    "departments": [
+      {
+        "name": "Dipartimento di Scienze Fisiche e Chimiche",
+        "members": [
+          "Armando Carlone",
+          "Luisa Giansanti",
+          "Laura Palombi",
+          "Fabio Pesciaioli"
+        ]
+      }
+    ],
+    "logo": "/img/uni/uni_aquila.jpg"
+  },
+  {
+    "name": "Università di Messina",
+    "delegate": "Melchiorre Parisi",
+    "departments": [
+      {
+        "name": "Dipartimento di Scienze chimiche, biologiche, farmaceutiche e ambientali",
+        "members": [
+          "Anna Barattucci",
+          "Paola Maria Bonaccorsi",
+          "Massimiliano Cordaro",
+          "Chiara Maria Antonietta Gangemi",
+          "Giuseppe Gattuso",
+          "Salvatore Giofrè",
+          "Giulia Neri",
+          "Anna Notti",
+          "Melchiorre Parisi",
+          "Anna Piperno",
+          "Ilenia Pisagatti",
+          "Roberto Romeo",
+          "Angela Scala"
+        ]
+      }
+    ],
+    "logo": "/img/uni/unime.png"
+  },
+  {
+    "name": "Università di Milano-Bicocca",
+    "delegate": "Barbara La Ferla",
+    "departments": [
+      {
+        "name": "Dipartimento di Biotecnologie e Bioscienze",
+        "members": [
+          "Cristina Airoldi",
+          "Laura Cipolla",
+          "Francesco Peri"
+        ]
+      },
+      {
+        "name": "Dipartimento di Scienza dei Materiali",
+        "members": [
+          "Alessandro Abbotto",
+          "Luca Beverina",
+          "Norberto Manfredi",
+          "Mauro Sassi"
+        ]
+      },
+      {
+        "name": "Dipartimento di  Scienze dell’Ambiente e della Terra",
+        "members": [
+          "Barbara La Ferla"
+        ]
+      }
+    ],
+    "logo": "/img/uni/unimib.png"
+  },
+  {
+    "name": "Università di Napoli",
+    "delegate": "Giorgia Oliviero",
+    "departments": [
+      {
+        "name": "CESTEV",
+        "members": [
+          "Maria Marzano"
+        ]
+      },
+      {
+        "name": "Dipartimento di Farmacia",
+        "members": [
+          "Nicola Borbone",
+          "Stefano D’Errico",
+          "Monica Terracciano"
+        ]
+      },
+      {
+        "name": "Dipartimento di Medicina Molecolare e Biotecnologie Mediche",
+        "members": [
+          "Giorgia Oliviero"
+        ]
+      },
+      {
+        "name": "Dipartimento di Scienze Chimiche",
+        "members": [
+          "Emiliano Bedini",
+          "Flaviana Di Lorenzo",
+          "Alfonso Iadonisi",
+          "Paola Manini",
+          "Antonio Molinaro",
+          "Daniela Montesarchio",
+          "Domenica Musumeci",
+          "Silvana Pedatella",
+          "Vincenzo Piccialli",
+          "Valeria Romanucci",
+          "Serena Traboni",
+          "Armando Zarrelli"
+        ]
+      }
+    ],
+    "logo": "/img/uni/unina.png"
+  },
+  {
+    "name": "Università di Pavia",
+    "delegate": "Filippo Doria",
+    "departments": [
+      {
+        "name": "Dipartimento di Scienze Chimiche",
+        "members": [
+          "Filippo Doria",
+          "Mauro Freccero",
+          "Stefano Protti",
+          "Davide Ravelli"
+        ]
+      }
+    ],
+    "logo": "/img/uni/unipv.png"
+  },
+  {
+    "name": "Università di Perugia",
+    "delegate": "Luana Bagnoli",
+    "departments": [
+      {
+        "name": "Dipartimento di Scienze Farmaceutiche",
+        "members": [
+          "Luana Bagnoli",
+          "Francesca Marini",
+          "Michela Proto",
+          "Ornelio Rosati",
+          "Luca Sancineto",
+          "Claudio Santi",
+          "Andrea Temperini"
+        ]
+      }
+    ],
+    "logo": "/img/uni/unipg.png"
+  },
+  {
+    "name": "Università di Pisa",
+    "delegate": "Marco Lessi",
+    "departments": [
+      {
+        "name": "Dipartimento di Chimica e Chimica Industriale",
+        "members": [
+          "Gaetano Angelici",
+          "Fabio Bellina",
+          "Lorenzo Di Bari",
+          "Anna Iuliano",
+          "Marco Lessi",
+          "Alessandro Mandoli",
+          "Alessandra Operamolla",
+          "Antonella Petri",
+          "Francesco Zinna"
+        ]
+      },
+      {
+        "name": "Dipartimento di Farmacia",
+        "members": [
+          "Felicia D’Andrea",
+          "Valeria Di Bussolo",
+          "Sebastiano Di Pietro",
+          "Lucilla Favero",
+          "Lorenzo Guazzelli",
+          "Mauro Pineschi"
+        ]
+      }
+    ],
+    "logo": "/img/uni/pisa.png"
+  },
+  {
+    "name": "Università di Salerno",
+    "delegate": "Francesco De Riccardis",
+    "departments": [
+      {
+        "name": "Dipartimento di Chimica e Biologia “A. Zambelli”",
+        "members": [
+          "Assunta D’Amato",
+          "Francesco De Riccardis",
+          "Margherita De Rosa",
+          "Giorgio Della Sala",
+          "Carmine Gaeta",
+          "Irene Izzo",
+          "Alessandra Lattanzi",
+          "Antonio Massa",
+          "Sara Meninno",
+          "Rosaria Schettini",
+          "Carmen Talotta"
+        ]
+      },
+      {
+        "name": "Dipartimento di Farmacia",
+        "members": [
+          "Giuseppe Bifulco",
+          "Ines Bruno",
+          "Agostino Casapullo",
+          "Sabrina Castellano",
+          "Assunta Giordano",
+          "Gianluigi Lauro",
+          "Ciro Milite",
+          "Gianluca Sbardella",
+          "Stefania Terracciano",
+          "Monica Viviano"
+        ]
+      }
+    ],
+    "logo": "/img/uni/uni_salerno.jpg"
+  }
+]
