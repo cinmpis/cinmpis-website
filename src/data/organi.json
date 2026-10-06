@@ -20,6 +20,11 @@
       "affiliation": "Università dell'Aquila"
     },
     {
+      "name": "Giorgia Oliviero",
+      "role": "Componente della Giunta",
+      "affiliation": "Università di Napoli"
+    },
+    {
       "name": "Alessandro Palmieri",
       "role": "Componente della Giunta",
       "affiliation": "Università di Camerino"
@@ -28,11 +33,6 @@
       "name": "Alessandra Tolomelli",
       "role": "Componente della Giunta",
       "affiliation": "Università di Bologna-Alma Mater Studiorum"
-    },
-    {
-      "name": "Giorgia Oliviero",
-      "role": "Componente della Giunta",
-      "affiliation": "Università di Napoli"
     }
   ],
   "consiglioScientifico": [
@@ -40,6 +40,21 @@
       "name": "Luana Bagnoli",
       "role": "Componente del Consiglio Scientifico",
       "affiliation": "Università di Perugia"
+    },
+    {
+      "name": "Francesco De Riccardis",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Salerno"
+    },
+    {
+      "name": "Filippo Doria",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università di Pavia"
+    },
+    {
+      "name": "Bartolo Gabriele",
+      "role": "Componente del Consiglio Scientifico",
+      "affiliation": "Università della Calabria"
     },
     {
       "name": "Barbara La Ferla",
@@ -62,29 +77,14 @@
       "affiliation": "Università di Catania"
     },
     {
-      "name": "Bartolo Gabriele",
+      "name": "Francesco Secci",
       "role": "Componente del Consiglio Scientifico",
-      "affiliation": "Università della Calabria"
-    },
-    {
-      "name": "Filippo Doria",
-      "role": "Componente del Consiglio Scientifico",
-      "affiliation": "Università di Pavia"
+      "affiliation": "Università di Cagliari"
     },
     {
       "name": "Stefano Superchi",
       "role": "Componente del Consiglio Scientifico",
       "affiliation": "Università della Basilicata"
-    },
-    {
-      "name": "Francesco De Riccardis",
-      "role": "Componente del Consiglio Scientifico",
-      "affiliation": "Università di Salerno"
-    },
-    {
-      "name": "Francesco Secci",
-      "role": "Componente del Consiglio Scientifico",
-      "affiliation": "Università di Cagliari"
     }
   ]
 }

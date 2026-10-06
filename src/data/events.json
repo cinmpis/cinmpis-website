@@ -5,23 +5,22 @@
     "venue": "Salone dei Marmi, Palazzo di Città, Via Roma 75, Salerno",
     "start": "2027-02-15",
     "end": "2027-02-17",
-    "website": "",
-    "status": "upcoming",
-    "source": "Società Chimica Italiana"
+    "website": "https://cinmpis2027.unisa.it/",
+    "status": "upcoming"
   },
   {
     "edition": "XXIV",
     "city": "Catania",
     "venue": "Università di Catania",
-    "website": "https://cinmpis2026.unict.it/",
     "start": "2026-02-16",
     "end": "2026-02-18",
+    "website": "https://cinmpis2026.unict.it/",
+    "status": "past",
     "lecturer": {
       "name": "Prof. Martin Oestreich",
       "headline": "The Cation Shuffle",
       "affiliation": "Technische Universität Berlin",
       "website": "https://www.tu.berlin/organometallics/ueber-uns/martin-oestreich",
-      "email": "",
       "photo": "/img/lecturers/Oestreich.webp"
     }
   },
@@ -29,15 +28,15 @@
     "edition": "XXIII",
     "city": "Napoli",
     "venue": "Università di Napoli",
-    "website": "https://www.cinmpis2025.it/",
     "start": "2025-02-16",
     "end": "2025-02-17",
+    "website": "https://www.cinmpis2025.it/",
+    "status": "past",
     "lecturer": {
       "name": "Prof. Carmen Galan",
       "headline": "Controlling G4 DNA topology with small molecules: towards the development of novel therapeutics",
       "affiliation": "University of Bristol",
       "website": "https://www.galanresearch.com/",
-      "email": "",
       "photo": "/img/lecturers/carmengalan.jpg"
     }
   },
@@ -45,15 +44,14 @@
     "edition": "30th Anniversary Conference (1994-2024) XXII –",
     "city": "Bari",
     "venue": "Università di Bari",
-    "website": "https://cinmpis2024.dcci.unipi.it/",
     "start": "2024-02-06",
     "end": "2024-02-08",
+    "website": "https://cinmpis2024.dcci.unipi.it/",
     "lecturer": {
       "name": "Prof. Helma Wennemers",
       "headline": "Asymmetric Catalysis with Peptides",
       "affiliation": "University of Zürich",
       "website": "https://wennemers.ethz.ch/",
-      "email": "",
       "photo": "/img/lecturers/Wennemers_Helma.jpg"
     }
   },
@@ -61,7 +59,6 @@
     "edition": "XXI",
     "city": "Pisa",
     "venue": "Università di Pisa",
-    "website": "",
     "start": "2023-02-09",
     "end": "2023-02-11",
     "lecturer": {
@@ -69,7 +66,6 @@
       "headline": "New Catalytic Approaches for Simplifying Complex Molecule Synthesis",
       "affiliation": "University of Oxford",
       "website": "http://dixon.chem.ox.ac.uk/",
-      "email": "",
       "photo": "/img/lecturers/darrendixon23.jpg"
     }
   },
@@ -77,15 +73,12 @@
     "edition": "XX",
     "city": "Messina",
     "venue": "Università di Messina",
-    "website": "",
     "start": "2021-09-07",
     "end": "2021-09-07",
     "lecturer": {
       "name": "Prof. M. Carmen Carreño",
       "headline": "Progress in Synthesis Mediated by Sulfoxides: Natural Products and Molecular Switches",
       "affiliation": "University of Madrid",
-      "website": "",
-      "email": "",
       "photo": "/img/lecturers/Maria.jpg"
     }
   },
@@ -93,7 +86,6 @@
     "edition": "XIX",
     "city": "Pavia",
     "venue": "Università di Pavia",
-    "website": "",
     "start": "2020-02-20",
     "end": "2020-02-21",
     "lecturer": {
@@ -109,7 +101,6 @@
     "edition": "XVIII",
     "city": "Bologna",
     "venue": "Università di Bologna",
-    "website": "",
     "start": "2019-02-18",
     "end": "2019-02-19",
     "lecturer": {
@@ -117,7 +108,6 @@
       "headline": "Lewis Acid Enabled Novel Reactivities in Asymmetric Copper Catalysis",
       "affiliation": "University of Groningen",
       "website": "http://www.sr-harutyunyan.com/",
-      "email": "",
       "photo": "/img/lecturers/SRH.png"
     }
   },
@@ -125,7 +115,6 @@
     "edition": "XVII",
     "city": "Cagliari",
     "venue": "Università di Cagliari",
-    "website": "",
     "start": "2017-12-15",
     "end": "2017-12-16",
     "lecturer": {
@@ -133,7 +122,6 @@
       "headline": "Research, a Magical Mystery Tour",
       "affiliation": "ETH Zürich",
       "website": "https://www.chab.ethz.ch/en/the-department/people/emeriti/emeriti-homepages/dieter-seebach.html",
-      "email": "",
       "photo": "/img/lecturers/DS.png"
     }
   },
@@ -141,7 +129,6 @@
     "edition": "XVI",
     "city": "Rende, Campus Scientifico",
     "venue": "Università della Calabria",
-    "website": "",
     "start": "2016-12-16",
     "end": "2016-12-17"
   },
@@ -149,7 +136,6 @@
     "edition": "XV",
     "city": "Napoli",
     "venue": "Università di Napoli Federico II",
-    "website": "",
     "start": "2015-12-11",
     "end": "2015-12-12"
   },
@@ -157,7 +143,6 @@
     "edition": "XIV - Ventennium Conference",
     "city": "Bari",
     "venue": "Università di Bari",
-    "website": "",
     "start": "2014-09-29",
     "end": "2014-09-30"
   },
@@ -165,7 +150,6 @@
     "edition": "XIII",
     "city": "Perugia",
     "venue": "Università di Perugia",
-    "website": "",
     "start": "2013-12-18",
     "end": "2013-12-18"
   },
@@ -173,15 +157,12 @@
     "edition": "XII",
     "city": "Milano",
     "venue": "Università di Milano-Bicocca",
-    "website": "",
     "start": "2012-12-03",
     "end": "2012-12-03",
     "lecturer": {
       "name": "Prof. Ilan Marek",
-      "headline": "",
       "affiliation": "Technion - Istrael Institute of Technology, Haifa, Israel",
       "website": "https://ilanmarek.technion.ac.il/",
-      "email": "",
       "photo": "/img/lecturers/IM.png"
     }
   },
@@ -189,7 +170,6 @@
     "edition": "XI",
     "city": "Bari",
     "venue": "Università di Bari",
-    "website": "",
     "start": "2011-11-25",
     "end": "2011-11-25"
   },
@@ -197,7 +177,6 @@
     "edition": "X",
     "city": "San Benedetto",
     "venue": "Centro Congressi \"PalaRiviera\"",
-    "website": "",
     "start": "2010-09-17",
     "end": "2010-09-17"
   },
@@ -205,7 +184,6 @@
     "edition": "IX",
     "city": "Padova",
     "venue": "Complesso San Gaetano",
-    "website": "",
     "start": "2009-09-02",
     "end": "2009-09-02"
   },
@@ -213,7 +191,6 @@
     "edition": "VIII",
     "city": "Milano",
     "venue": "Università statale di Milano",
-    "website": "",
     "start": "2008-11-25",
     "end": "2008-11-25"
   },
@@ -221,7 +198,6 @@
     "edition": "VII",
     "city": "Napoli",
     "venue": "Università di Napoli Federico II",
-    "website": "",
     "start": "2007-11-29",
     "end": "2007-11-29"
   },
@@ -229,7 +205,6 @@
     "edition": "VI",
     "city": "Bologna",
     "venue": "Università di Bologna",
-    "website": "",
     "start": "2006-10-13",
     "end": "2006-10-13"
   },
@@ -237,7 +212,6 @@
     "edition": "V",
     "city": "Bari",
     "venue": "Università di Bari",
-    "website": "",
     "start": "2005-10-07",
     "end": "2005-10-07"
   },
@@ -245,7 +219,6 @@
     "edition": "IV",
     "city": "Firenze",
     "venue": "Università di Firenze",
-    "website": "",
     "start": "2004-10-22",
     "end": "2004-10-22"
   },
@@ -253,7 +226,6 @@
     "edition": "III",
     "city": "Lecce",
     "venue": "Università di Lecce",
-    "website": "",
     "start": "2003-09-18",
     "end": "2003-09-19"
   },
@@ -261,7 +233,6 @@
     "edition": "II",
     "city": "L'Aquila",
     "venue": "DOMPE' SpA",
-    "website": "",
     "start": "2002-10-28",
     "end": "2002-10-28"
   },
@@ -269,7 +240,6 @@
     "edition": "I",
     "city": "Pavia",
     "venue": "Università di Pavia",
-    "website": "",
     "start": "2001-10-09",
     "end": "2001-10-09"
   }
