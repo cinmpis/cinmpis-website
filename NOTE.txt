@@ -1,0 +1,13 @@
+Aggiornamento mirato della hero della home page CINMPIS.
+
+Modifiche:
+- logo nella hero ridotto a circa il 40% della versione precedente;
+- posizionamento discreto in basso a destra;
+- rimosso completamente il riquadro/carta del logo;
+- eliminati caption, glow e pannello chiaro;
+- il logo viene mostrato solo come esagono tramite clip-path, per nascondere la parte chiara esterna;
+- ombre molto ridotte.
+
+File inclusi:
+- src/components/MolecularHeroVisual.astro
+- src/styles/global.css
