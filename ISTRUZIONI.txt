@@ -1,11 +1,16 @@
-AGGIORNAMENTO CINMPIS — LOGO + HOME MODERNA
+CORREZIONE LOGO CINMPIS — versione per il sito attualmente pubblicato su GitHub Pages
 
-1. Copiare tutto il contenuto di questa cartella nella root del repository cinmpis-website.
-2. Confermare la sovrascrittura dei file esistenti.
-3. NON cancellare la cartella .git.
-4. Eliminare, se ancora presente: public/img/bannervideo.mp4
-5. Commit consigliato: "Modernize CINMPIS identity and homepage"
-6. Push su GitHub.
-7. In Pages CMS premere "Anteprima sito".
+Sostituire soltanto questi 2 file nel repository:
 
-Il logo è ora modificabile da Pages CMS > Impostazioni sito > Logo CINMPIS.
+1) public/assets/cinmpis-logo.webp
+2) src/styles/global.css
+
+Cosa cambia:
+- il logo WebP ha ora vera trasparenza all'esterno dell'esagono;
+- nessun clip-path CSS viene più usato per simulare la trasparenza;
+- il logo nella hero resta piccolo (128 px desktop), statico, in basso a destra;
+- nessun riquadro, nessun glow, ombra minima;
+- header e footer usano lo stesso logo completo ma senza card/riquadri bianchi artificiali;
+- il campo bianco INTERNO all'esagono resta naturalmente parte del marchio.
+
+Dopo la copia: commit, push, quindi rigenerare l'Anteprima sito.
