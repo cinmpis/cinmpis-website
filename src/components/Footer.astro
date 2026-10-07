@@ -5,7 +5,7 @@ import { withBase } from '../utils/url.js';
 <footer class="site-footer">
   <div class="container-wide footer-grid">
     <div>
-      <div class="footer-brand"><img src={withBase('/assets/cinmpis-mark.svg')} alt="" width="52" height="52"/><strong>CINMPIS</strong></div>
+      <div class="footer-brand"><span class="footer-logo"><img src={withBase(site.logo || '/assets/cinmpis-mark.svg')} alt="Logo CINMPIS"/></span><strong>CINMPIS</strong></div>
       <p>{site.fullName}</p>
       <p class="muted">Costituito nel 1994 · sotto la vigilanza del Ministero dell’Università e della Ricerca.</p>
     </div>

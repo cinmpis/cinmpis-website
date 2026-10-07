@@ -1,4 +1,5 @@
 ---
+import site from '../data/site.json';
 import { withBase } from '../utils/url.js';
 const path = Astro.url.pathname;
 const nav = [
@@ -8,8 +9,8 @@ const nav = [
 <header class="site-header" data-header>
   <div class="nav-wrap container-wide">
     <a class="brand" href={withBase('/')} aria-label="CINMPIS home">
-      <img src={withBase('/assets/cinmpis-mark.svg')} width="48" height="48" alt="" />
-      <span><strong>CINMPIS</strong><small>Rete interuniversitaria di ricerca</small></span>
+      <span class="brand-logo"><img src={withBase(site.logo || '/assets/cinmpis-mark.svg')} alt="Logo CINMPIS" /></span>
+      <span class="brand-copy"><strong>{site.name}</strong><small>{site.tagline || 'Rete interuniversitaria di ricerca'}</small></span>
     </a>
     <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" data-menu-toggle>
       <span></span><span></span><span></span>

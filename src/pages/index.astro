@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import MolecularHeroVisual from '../components/MolecularHeroVisual.astro';
 import universities from '../data/universities.json';
 import news from '../data/news.json';
 import events from '../data/events.json';
@@ -8,7 +9,19 @@ const latest = [...news].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,3);
 const upcoming=events.find(e=>e.status==='upcoming');
 ---
 <BaseLayout title="CINMPIS" description="Rete scientifica interuniversitaria italiana dedicata alle metodologie e ai processi innovativi di sintesi.">
-<section class="hero"><video autoplay muted loop playsinline poster={withBase('/img/raphael-biscaldi-5PEy9UraJ5c-unsplash.jpg')}><source src={withBase('/img/bannervideo.mp4')} type="video/mp4"/></video><div class="container-wide hero-content"><span class="eyebrow">Dal 1994 · ricerca in rete</span><h1>CINMPIS<span>Consorzio Interuniversitario Nazionale “Metodologie e Processi Innovativi di Sintesi”</span></h1><p>Una rete nazionale che connette competenze, infrastrutture e giovani ricercatori per sviluppare nuova conoscenza chimica e trasferirla verso applicazioni e industria.</p><div class="actions"><a class="btn btn-primary" href={withBase('/consorzio/')}>Scopri il Consorzio</a><a class="btn btn-ghost" href={withBase('/rete/')}>Esplora la rete</a></div></div></section>
+<section class="hero hero-modern">
+  <div class="hero-backdrop" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="container-wide hero-grid">
+    <div class="hero-content">
+      <span class="eyebrow">Dal 1994 · ricerca in rete</span>
+      <h1>CINMPIS<span>Consorzio Interuniversitario Nazionale “Metodologie e Processi Innovativi di Sintesi”</span></h1>
+      <p>Una rete nazionale che connette competenze, infrastrutture e giovani ricercatori per sviluppare nuova conoscenza chimica e trasferirla verso applicazioni e industria.</p>
+      <div class="actions"><a class="btn btn-primary" href={withBase('/consorzio/')}>Scopri il Consorzio</a><a class="btn btn-ghost" href={withBase('/rete/')}>Esplora la rete</a></div>
+      <div class="hero-signals" aria-label="Punti di forza"><span>Ricerca</span><span>Formazione</span><span>Trasferimento</span></div>
+    </div>
+    <MolecularHeroVisual />
+  </div>
+</section>
 <div class="container-wide stats"><div class="stat"><strong>15</strong><span>Università consorziate</span></div><div class="stat"><strong>151+</strong><span>Afferenti censiti</span></div><div class="stat"><strong>1994</strong><span>Anno di costituzione</span></div><div class="stat"><strong>25</strong><span>Edizioni CINMPIS Days nel 2027</span></div></div>
 <section class="section"><div class="container-wide"><div class="section-head"><div><span class="eyebrow">Missione</span><h2>Ricerca, formazione, trasferimento.</h2></div><p>Il CINMPIS coordina competenze distribuite sul territorio nazionale, favorendo collaborazione scientifica, alta formazione, condivisione di infrastrutture e rapporto con il sistema produttivo.</p></div><div class="cards-3"><article class="card"><span class="meta">01 · Ricerca</span><h3>Collaborazione scientifica</h3><p>Sinergie tra università, enti pubblici e privati per progetti multidisciplinari e internazionali.</p><a class="link-arrow" href={withBase('/consorzio/')}>Obiettivi e competenze</a></article><article class="card"><span class="meta">02 · Formazione</span><h3>Nuove generazioni</h3><p>Borse, dottorati e iniziative scientifiche per la formazione di ricercatrici e ricercatori altamente qualificati.</p><a class="link-arrow" href={withBase('/premi/')}>Premi CINMPIS</a></article><article class="card"><span class="meta">03 · Network</span><h3>Una rete nazionale</h3><p>Quindici università e oltre centocinquanta afferenti con competenze complementari nella scienza molecolare.</p><a class="link-arrow" href={withBase('/rete/')}>Università e afferenti</a></article></div></div></section>
 <section class="section dark"><div class="container-wide"><div class="section-head"><div><span class="eyebrow">Prossimo appuntamento</span><h2>CINMPIS Days 2027</h2></div><p>Il principale momento annuale di incontro della comunità CINMPIS: ricerca, giovani scienziati, invited lectures e networking.</p></div>{upcoming && <div class="event-feature"><div class="event-date"><strong>15–17</strong>febbraio 2027</div><div><span class="meta">XXV edizione · Salerno</span><h3 style="font-size:2rem;margin:.35rem 0">Salone dei Marmi, Palazzo di Città</h3><p style="color:#cbe0e4">Via Roma 75, Salerno</p><a class="btn btn-primary" href={withBase('/cinmpis-days/')}>Programma e archivio delle edizioni</a></div></div>}</div></section>

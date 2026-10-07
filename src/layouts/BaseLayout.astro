@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { withBase } from '../utils/url.js';
+import site from '../data/site.json';
 import '../styles/global.css';
 const {title='CINMPIS', description='Consorzio Interuniversitario Nazionale Metodologie e Processi Innovativi di Sintesi', noindex=false} = Astro.props;
 const isPreview = import.meta.env.PUBLIC_PREVIEW_MODE === 'true';
@@ -14,7 +15,7 @@ const canonical = new URL(productionPath, 'https://www.cinmpis.it');
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>{title === 'CINMPIS' ? title : `${title} | CINMPIS`}</title><meta name="description" content={description}/><link rel="canonical" href={canonical}/>
 {(noindex || isPreview) && <meta name="robots" content="noindex,nofollow,noarchive"/>}
-<meta name="theme-color" content="#0a536a"/><meta property="og:type" content="website"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content="https://www.cinmpis.it/img/raphael-biscaldi-5PEy9UraJ5c-unsplash.jpg"/>
+<meta name="theme-color" content="#0a536a"/><meta property="og:type" content="website"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={new URL(site.logo || '/assets/cinmpis-logo.webp', 'https://www.cinmpis.it').toString()}/>
 <link rel="icon" href={withBase('/favicon.png')}/>
 <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"Organization","name":"CINMPIS","legalName":"Consorzio Interuniversitario Nazionale Metodologie e Processi Innovativi di Sintesi","url":"https://www.cinmpis.it","foundingDate":"1994","address":{"@type":"PostalAddress","addressLocality":"Bari","addressCountry":"IT"}})}></script>
 </head><body class:list={{'preview-mode': isPreview}}>

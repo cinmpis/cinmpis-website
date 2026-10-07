@@ -26,6 +26,8 @@ content:
     fields:
       - { name: name, label: Nome breve, type: string }
       - { name: fullName, label: Nome completo, type: text }
+      - { name: logo, label: Logo CINMPIS, type: image, required: false }
+      - { name: tagline, label: Sottotitolo breve, type: string, required: false }
       - { name: url, label: URL, type: string }
       - { name: founded, label: Anno di fondazione, type: number }
       - { name: legalAddress, label: Sede legale, type: text }

@@ -1,0 +1,11 @@
+AGGIORNAMENTO CINMPIS — LOGO + HOME MODERNA
+
+1. Copiare tutto il contenuto di questa cartella nella root del repository cinmpis-website.
+2. Confermare la sovrascrittura dei file esistenti.
+3. NON cancellare la cartella .git.
+4. Eliminare, se ancora presente: public/img/bannervideo.mp4
+5. Commit consigliato: "Modernize CINMPIS identity and homepage"
+6. Push su GitHub.
+7. In Pages CMS premere "Anteprima sito".
+
+Il logo è ora modificabile da Pages CMS > Impostazioni sito > Logo CINMPIS.
